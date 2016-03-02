@@ -7,6 +7,10 @@ DIRS=`find "$ROOTPATH/site" -maxdepth 1 -mindepth 1 -type d -cmin +120 -exec bas
 for DIR in $DIRS
 do
     if [[ -d "$ROOTPATH/site/$DIR" ]]; then
+        echo "Removing database demo_$DIR..."
+        cd "$ROOTPATH/site/$DIR"
+        wp db drop --yes
+
         echo "Removing site/$DIR..."
         rm -rf "$ROOTPATH/site/$DIR"
     fi
