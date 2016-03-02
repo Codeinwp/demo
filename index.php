@@ -7,7 +7,7 @@ require_once 'vendor/autoload.php';
 $client = new \Github\Client();
 $client->authenticate( GITHUB_TOKEN, null, \Github\Client::AUTH_HTTP_TOKEN );
 
-$plugin = $_GET['plugin'];
+$plugin = isset($_GET['plugin']) ? $_GET['plugin'] : '';
 if ( ! in_array( $plugin, PLUGINS ) ) {
 	die( 'Invalid plugin' );
 }
