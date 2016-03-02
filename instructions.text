@@ -1,6 +1,6 @@
-<p>Welcome to this demo site. You can login to the admin using the following credentials:</p>
+Welcome to this demo site. You can login to the admin using the following credentials:
 
-<p><strong>Username:</strong> admin<br>
-<p><strong>Password:</strong> admin</p>
+<strong>Username:</strong> admin
+<strong>Password:</strong> admin
 
-<p>This demo site will exist for <strong>2 hours</strong> before being destroyed.</p>
+This demo site will exist for <strong>2 hours</strong> before being destroyed.
