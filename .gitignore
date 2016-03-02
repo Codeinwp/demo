@@ -1,0 +1,7 @@
+/plugins/*
+!/plugins/.gitkeep
+/site/*
+!/site/.gitkeep
+/vendor
+composer.lock
+config.php
