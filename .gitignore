@@ -5,3 +5,4 @@
 /vendor
 composer.lock
 config.php
+post-create-site.sh

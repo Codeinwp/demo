@@ -34,3 +34,7 @@ wp post create "$ROOTPATH/instructions.text" --post_title="Demo Instructions" --
 wp plugin install "$PLUGIN_ZIP"
 PLUGIN_FILE=${PLUGIN_ZIP##*/}
 wp plugin activate "${PLUGIN_FILE%.*}"
+
+if [ -f "$ROOTPATH/post-create-site.sh" ]; then
+    bash "$ROOTPATH/post-create-site.sh"
+fi
