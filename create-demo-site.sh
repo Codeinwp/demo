@@ -21,8 +21,7 @@ cd "$ROOTPATH/site/$HASH"
 
 wp core download
 wp core config --dbname="demo_$HASH" --dbuser="$DB_USER" --dbpass="$DB_PASS" --extra-php <<PHP
-define( 'WP_DEBUG', false );
-define( 'WP_DEBUG_LOG', true );
+error_reporting(0);
 define( 'DISALLOW_FILE_EDIT', true );
 PHP
 wp db drop --yes
