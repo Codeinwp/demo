@@ -29,7 +29,7 @@ wp db create
 wp core install --url="$DEMO_URL" --title="Demo Site" --admin_user="admin" --admin_password="admin" --admin_email="admin@example.com"
 
 wp post delete $(wp post list --post_type='post' --format=ids)
-wp post create "$ROOTPATH/instructions.text" --post_title="Demo Instructions"
+wp post create "$ROOTPATH/instructions.text" --post_title="Demo Instructions" --post_status=publish
 
 wp plugin install "$PLUGIN_ZIP"
 PLUGIN_FILE=${PLUGIN_ZIP##*/}
