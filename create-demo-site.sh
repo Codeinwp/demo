@@ -23,6 +23,7 @@ wp core download
 wp core config --dbname="demo_$HASH" --dbuser="$DB_USER" --dbpass="$DB_PASS" --extra-php <<PHP
 error_reporting(0);
 define( 'DISALLOW_FILE_EDIT', true );
+define( 'DISALLOW_FILE_MODS', true );
 PHP
 wp db drop --yes
 wp db create
